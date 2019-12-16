@@ -1,0 +1,811 @@
+19/12/16 11:41:31 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+19/12/16 11:41:31 INFO DAGScheduler: Job 2 finished: show at CodingAssignment.scala:53, took 3.021982 s
+19/12/16 11:41:31 INFO CodeGenerator: Code generated in 14.8145 ms
+19/12/16 11:41:31 INFO CodeGenerator: Code generated in 18.8877 ms
++--------------+----------------------+
+|transactionDay|sum(transactionAmount)|
++--------------+----------------------+
+|             1|    28929.559999999998|
+|             2|    25202.809999999998|
+|             3|    12807.940000000004|
+|             4|              34606.83|
+|             5|     5778.629999999999|
+|             6|    27769.670000000002|
+|             7|               9999.77|
+|             8|     28614.41999999999|
+|             9|    14591.219999999994|
+|            10|    13881.060000000003|
+|            11|    24238.179999999997|
+|            12|              16858.38|
+|            13|              10485.64|
+|            14|              15692.67|
+|            15|     5803.870000000001|
+|            16|               5520.11|
+|            17|    13716.149999999998|
+|            18|               9131.93|
+|            19|               9273.46|
+|            20|              21050.93|
++--------------+----------------------+
+
+only showing top 20 rows
+
+
+
+19/12/16 11:42:40 INFO TaskSetManager: Finished task 194.0 in stage 9.0 (TID 807) in 29 ms on DESKTOP-6PE936M (executor driver) (198/200)
+19/12/16 11:42:40 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:40 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:40 INFO Executor: Finished task 198.0 in stage 9.0 (TID 808). 6070 bytes result sent to driver
+19/12/16 11:42:40 INFO TaskSetManager: Finished task 198.0 in stage 9.0 (TID 808) in 18 ms on DESKTOP-6PE936M (executor driver) (199/200)
+19/12/16 11:42:40 INFO Executor: Finished task 199.0 in stage 9.0 (TID 809). 6070 bytes result sent to driver
+19/12/16 11:42:40 INFO TaskSetManager: Finished task 199.0 in stage 9.0 (TID 809) in 7 ms on DESKTOP-6PE936M (executor driver) (200/200)
+19/12/16 11:42:40 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+19/12/16 11:42:40 INFO DAGScheduler: ResultStage 9 (show at CodingAssignment.scala:65) finished in 1.108 s
+19/12/16 11:42:40 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+19/12/16 11:42:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+19/12/16 11:42:40 INFO DAGScheduler: Job 5 finished: show at CodingAssignment.scala:65, took 1.432011 s
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 13.995 ms
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 17.8015 ms
++--------------+---------+----------------------+----------------------+----------------------+
+|transactionDay|accountId|max(transactionAmount)|avg(transactionAmount)|sum(transactionAmount)|
++--------------+---------+----------------------+----------------------+----------------------+
+|             1|       A1|                227.64|                227.64|                227.64|
+|             5|       A1|                171.19|                171.19|                171.19|
+|             4|       A1|                977.98|                977.98|                977.98|
+|             1|      A10|                557.57|               490.755|                981.51|
+|             4|      A10|                132.46|                132.46|                132.46|
+|             2|      A10|                747.62|                747.62|                747.62|
+|             2|      A11|                914.89|               597.085|               2388.34|
+|             4|      A12|                 610.0|                510.25|                1020.5|
+|             3|      A12|                586.62|                586.62|                586.62|
+|             2|      A12|                928.86|                683.87|               1367.74|
+|             1|      A13|                996.67|                 829.4|                1658.8|
+|             4|      A13|                 611.9|                 611.9|                 611.9|
+|             2|      A13|                516.34|    239.33333333333334|                 718.0|
+|             1|      A14|                733.77|    425.37000000000006|    1276.1100000000001|
+|             4|      A14|                931.16|     755.6999999999999|                2267.1|
+|             3|      A14|                624.94|                624.94|                624.94|
+|             4|      A15|                515.35|                355.06|                710.12|
+|             2|      A15|                 713.6|    440.95500000000004|     881.9100000000001|
+|             5|      A16|                761.67|                761.67|                761.67|
+|             1|      A16|                820.45|     653.4166666666666|               1960.25|
++--------------+---------+----------------------+----------------------+----------------------+
+only showing top 20 rows
+
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 22.4126 ms
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 51.7638 ms
+19/12/16 11:42:40 INFO SparkContext: Starting job: show at CodingAssignment.scala:75
+19/12/16 11:42:40 INFO DAGScheduler: Registering RDD 37 (show at CodingAssignment.scala:75) as input to shuffle 4
+19/12/16 11:42:40 INFO DAGScheduler: Got job 6 (show at CodingAssignment.scala:75) with 1 output partitions
+19/12/16 11:42:40 INFO DAGScheduler: Final stage: ResultStage 11 (show at CodingAssignment.scala:75)
+19/12/16 11:42:40 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+19/12/16 11:42:40 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+19/12/16 11:42:40 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[37] at show at CodingAssignment.scala:75), which has no missing parents
+19/12/16 11:42:40 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 41.7 KiB, free 1990.4 MiB)
+19/12/16 11:42:40 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 17.1 KiB, free 1990.4 MiB)
+19/12/16 11:42:40 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on DESKTOP-6PE936M:62724 (size: 17.1 KiB, free: 1990.7 MiB)
+19/12/16 11:42:40 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1196
+19/12/16 11:42:40 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[37] at show at CodingAssignment.scala:75) (first 15 tasks are for partitions Vector(0, 1))
+19/12/16 11:42:40 INFO TaskSchedulerImpl: Adding task set 10.0 with 2 tasks
+19/12/16 11:42:40 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 810, DESKTOP-6PE936M, executor driver, partition 0, PROCESS_LOCAL, 7374 bytes)
+19/12/16 11:42:40 INFO TaskSetManager: Starting task 1.0 in stage 10.0 (TID 811, DESKTOP-6PE936M, executor driver, partition 1, PROCESS_LOCAL, 7374 bytes)
+19/12/16 11:42:40 INFO Executor: Running task 0.0 in stage 10.0 (TID 810)
+19/12/16 11:42:40 INFO Executor: Running task 1.0 in stage 10.0 (TID 811)
+19/12/16 11:42:40 INFO HadoopRDD: Input split: file:/C:/Users/DELL/Desktop/transactions.txt:0+12038
+19/12/16 11:42:40 INFO HadoopRDD: Input split: file:/C:/Users/DELL/Desktop/transactions.txt:12038+12039
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 9.0315 ms
+19/12/16 11:42:40 INFO CodeGenerator: Code generated in 9.5032 ms
+19/12/16 11:42:41 INFO Executor: Finished task 1.0 in stage 10.0 (TID 811). 2535 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 1.0 in stage 10.0 (TID 811) in 226 ms on DESKTOP-6PE936M (executor driver) (1/2)
+19/12/16 11:42:41 INFO Executor: Finished task 0.0 in stage 10.0 (TID 810). 2535 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 810) in 234 ms on DESKTOP-6PE936M (executor driver) (2/2)
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+19/12/16 11:42:41 INFO DAGScheduler: ShuffleMapStage 10 (show at CodingAssignment.scala:75) finished in 0.240 s
+19/12/16 11:42:41 INFO DAGScheduler: looking for newly runnable stages
+19/12/16 11:42:41 INFO DAGScheduler: running: Set()
+19/12/16 11:42:41 INFO DAGScheduler: waiting: Set(ResultStage 11)
+19/12/16 11:42:41 INFO DAGScheduler: failed: Set()
+19/12/16 11:42:41 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75), which has no missing parents
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 37.1 KiB, free 1990.3 MiB)
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 16.5 KiB, free 1990.3 MiB)
+19/12/16 11:42:41 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on DESKTOP-6PE936M:62724 (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1196
+19/12/16 11:42:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75) (first 15 tasks are for partitions Vector(0))
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 812, DESKTOP-6PE936M, executor driver, partition 0, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 0.0 in stage 11.0 (TID 812)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 0.0 in stage 11.0 (TID 812). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 812) in 11 ms on DESKTOP-6PE936M (executor driver) (1/1)
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+19/12/16 11:42:41 INFO DAGScheduler: ResultStage 11 (show at CodingAssignment.scala:75) finished in 0.016 s
+19/12/16 11:42:41 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+19/12/16 11:42:41 INFO DAGScheduler: Job 6 finished: show at CodingAssignment.scala:75, took 0.263734 s
+19/12/16 11:42:41 INFO SparkContext: Starting job: show at CodingAssignment.scala:75
+19/12/16 11:42:41 INFO DAGScheduler: Got job 7 (show at CodingAssignment.scala:75) with 4 output partitions
+19/12/16 11:42:41 INFO DAGScheduler: Final stage: ResultStage 13 (show at CodingAssignment.scala:75)
+19/12/16 11:42:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 12)
+19/12/16 11:42:41 INFO DAGScheduler: Missing parents: List()
+19/12/16 11:42:41 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75), which has no missing parents
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 37.1 KiB, free 1990.3 MiB)
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 16.5 KiB, free 1990.3 MiB)
+19/12/16 11:42:41 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on DESKTOP-6PE936M:62724 (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1196
+19/12/16 11:42:41 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 13 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Adding task set 13.0 with 4 tasks
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 2.0 in stage 13.0 (TID 813, DESKTOP-6PE936M, executor driver, partition 3, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 814, DESKTOP-6PE936M, executor driver, partition 1, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 1.0 in stage 13.0 (TID 815, DESKTOP-6PE936M, executor driver, partition 2, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 3.0 in stage 13.0 (TID 816, DESKTOP-6PE936M, executor driver, partition 4, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 0.0 in stage 13.0 (TID 814)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 0.0 in stage 13.0 (TID 814). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 1.0 in stage 13.0 (TID 815)
+19/12/16 11:42:41 INFO Executor: Running task 3.0 in stage 13.0 (TID 816)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 1.0 in stage 13.0 (TID 815). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 3.0 in stage 13.0 (TID 816). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 814) in 13 ms on DESKTOP-6PE936M (executor driver) (1/4)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 1.0 in stage 13.0 (TID 815) in 13 ms on DESKTOP-6PE936M (executor driver) (2/4)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 3.0 in stage 13.0 (TID 816) in 12 ms on DESKTOP-6PE936M (executor driver) (3/4)
+19/12/16 11:42:41 INFO Executor: Running task 2.0 in stage 13.0 (TID 813)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 2.0 in stage 13.0 (TID 813). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 2.0 in stage 13.0 (TID 813) in 19 ms on DESKTOP-6PE936M (executor driver) (4/4)
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+19/12/16 11:42:41 INFO DAGScheduler: ResultStage 13 (show at CodingAssignment.scala:75) finished in 0.025 s
+19/12/16 11:42:41 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 13: Stage finished
+19/12/16 11:42:41 INFO DAGScheduler: Job 7 finished: show at CodingAssignment.scala:75, took 0.028597 s
+19/12/16 11:42:41 INFO SparkContext: Starting job: show at CodingAssignment.scala:75
+19/12/16 11:42:41 INFO DAGScheduler: Got job 8 (show at CodingAssignment.scala:75) with 20 output partitions
+19/12/16 11:42:41 INFO DAGScheduler: Final stage: ResultStage 15 (show at CodingAssignment.scala:75)
+19/12/16 11:42:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 14)
+19/12/16 11:42:41 INFO DAGScheduler: Missing parents: List()
+19/12/16 11:42:41 INFO DAGScheduler: Submitting ResultStage 15 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75), which has no missing parents
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 37.1 KiB, free 1990.2 MiB)
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 16.5 KiB, free 1990.2 MiB)
+19/12/16 11:42:41 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on DESKTOP-6PE936M:62724 (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1196
+19/12/16 11:42:41 INFO DAGScheduler: Submitting 20 missing tasks from ResultStage 15 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75) (first 15 tasks are for partitions Vector(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19))
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Adding task set 15.0 with 20 tasks
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 817, DESKTOP-6PE936M, executor driver, partition 5, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 818, DESKTOP-6PE936M, executor driver, partition 6, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 10.0 in stage 15.0 (TID 819, DESKTOP-6PE936M, executor driver, partition 15, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 11.0 in stage 15.0 (TID 820, DESKTOP-6PE936M, executor driver, partition 16, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 0.0 in stage 15.0 (TID 817)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (144.0 B) non-empty blocks including 2 (144.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 1.0 in stage 15.0 (TID 818)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (169.0 B) non-empty blocks including 2 (169.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+19/12/16 11:42:41 INFO Executor: Finished task 0.0 in stage 15.0 (TID 817). 3709 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 10.0 in stage 15.0 (TID 819)
+19/12/16 11:42:41 INFO Executor: Finished task 1.0 in stage 15.0 (TID 818). 3767 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 11.0 in stage 15.0 (TID 820)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (169.0 B) non-empty blocks including 2 (169.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (144.0 B) non-empty blocks including 2 (144.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 19.0 in stage 15.0 (TID 821, DESKTOP-6PE936M, executor driver, partition 24, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 2.0 in stage 15.0 (TID 822, DESKTOP-6PE936M, executor driver, partition 7, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 11.0 in stage 15.0 (TID 820). 3752 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 817) in 29 ms on DESKTOP-6PE936M (executor driver) (1/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 818) in 29 ms on DESKTOP-6PE936M (executor driver) (2/20)
+19/12/16 11:42:41 INFO Executor: Running task 19.0 in stage 15.0 (TID 821)
+19/12/16 11:42:41 INFO Executor: Finished task 10.0 in stage 15.0 (TID 819). 3771 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 2.0 in stage 15.0 (TID 822)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (144.0 B) non-empty blocks including 2 (144.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 19.0 in stage 15.0 (TID 821). 3706 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 2.0 in stage 15.0 (TID 822). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 3.0 in stage 15.0 (TID 823, DESKTOP-6PE936M, executor driver, partition 8, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 4.0 in stage 15.0 (TID 824, DESKTOP-6PE936M, executor driver, partition 9, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 5.0 in stage 15.0 (TID 825, DESKTOP-6PE936M, executor driver, partition 10, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 6.0 in stage 15.0 (TID 826, DESKTOP-6PE936M, executor driver, partition 11, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 11.0 in stage 15.0 (TID 820) in 48 ms on DESKTOP-6PE936M (executor driver) (3/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 10.0 in stage 15.0 (TID 819) in 48 ms on DESKTOP-6PE936M (executor driver) (4/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 19.0 in stage 15.0 (TID 821) in 25 ms on DESKTOP-6PE936M (executor driver) (5/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 2.0 in stage 15.0 (TID 822) in 22 ms on DESKTOP-6PE936M (executor driver) (6/20)
+19/12/16 11:42:41 INFO Executor: Running task 3.0 in stage 15.0 (TID 823)
+19/12/16 11:42:41 INFO Executor: Running task 4.0 in stage 15.0 (TID 824)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 3.0 in stage 15.0 (TID 823). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 4.0 in stage 15.0 (TID 824). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 5.0 in stage 15.0 (TID 825)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 5.0 in stage 15.0 (TID 825). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 6.0 in stage 15.0 (TID 826)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 6.0 in stage 15.0 (TID 826). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 7.0 in stage 15.0 (TID 827, DESKTOP-6PE936M, executor driver, partition 12, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 8.0 in stage 15.0 (TID 828, DESKTOP-6PE936M, executor driver, partition 13, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 9.0 in stage 15.0 (TID 829, DESKTOP-6PE936M, executor driver, partition 14, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 12.0 in stage 15.0 (TID 830, DESKTOP-6PE936M, executor driver, partition 17, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 4.0 in stage 15.0 (TID 824) in 33 ms on DESKTOP-6PE936M (executor driver) (7/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 5.0 in stage 15.0 (TID 825) in 32 ms on DESKTOP-6PE936M (executor driver) (8/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 6.0 in stage 15.0 (TID 826) in 33 ms on DESKTOP-6PE936M (executor driver) (9/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 3.0 in stage 15.0 (TID 823) in 34 ms on DESKTOP-6PE936M (executor driver) (10/20)
+19/12/16 11:42:41 INFO Executor: Running task 7.0 in stage 15.0 (TID 827)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 8.0 in stage 15.0 (TID 828)
+19/12/16 11:42:41 INFO Executor: Finished task 7.0 in stage 15.0 (TID 827). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 9.0 in stage 15.0 (TID 829)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 9.0 in stage 15.0 (TID 829). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 13.0 in stage 15.0 (TID 831, DESKTOP-6PE936M, executor driver, partition 18, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 14.0 in stage 15.0 (TID 832, DESKTOP-6PE936M, executor driver, partition 19, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 7.0 in stage 15.0 (TID 827) in 19 ms on DESKTOP-6PE936M (executor driver) (11/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 9.0 in stage 15.0 (TID 829) in 18 ms on DESKTOP-6PE936M (executor driver) (12/20)
+19/12/16 11:42:41 INFO Executor: Running task 12.0 in stage 15.0 (TID 830)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+19/12/16 11:42:41 INFO Executor: Finished task 8.0 in stage 15.0 (TID 828). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 13.0 in stage 15.0 (TID 831)
+19/12/16 11:42:41 INFO Executor: Finished task 12.0 in stage 15.0 (TID 830). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 14.0 in stage 15.0 (TID 832)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 13.0 in stage 15.0 (TID 831). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 15.0 in stage 15.0 (TID 833, DESKTOP-6PE936M, executor driver, partition 20, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 16.0 in stage 15.0 (TID 834, DESKTOP-6PE936M, executor driver, partition 21, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 8.0 in stage 15.0 (TID 828) in 32 ms on DESKTOP-6PE936M (executor driver) (13/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 12.0 in stage 15.0 (TID 830) in 32 ms on DESKTOP-6PE936M (executor driver) (14/20)
+19/12/16 11:42:41 INFO Executor: Running task 15.0 in stage 15.0 (TID 833)
+19/12/16 11:42:41 INFO Executor: Finished task 14.0 in stage 15.0 (TID 832). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 16.0 in stage 15.0 (TID 834)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 15.0 in stage 15.0 (TID 833). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 17.0 in stage 15.0 (TID 835, DESKTOP-6PE936M, executor driver, partition 22, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 16.0 in stage 15.0 (TID 834). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 18.0 in stage 15.0 (TID 836, DESKTOP-6PE936M, executor driver, partition 23, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 14.0 in stage 15.0 (TID 832) in 23 ms on DESKTOP-6PE936M (executor driver) (15/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 15.0 in stage 15.0 (TID 833) in 10 ms on DESKTOP-6PE936M (executor driver) (16/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 16.0 in stage 15.0 (TID 834) in 10 ms on DESKTOP-6PE936M (executor driver) (17/20)
+19/12/16 11:42:41 INFO Executor: Running task 17.0 in stage 15.0 (TID 835)
+19/12/16 11:42:41 INFO Executor: Running task 18.0 in stage 15.0 (TID 836)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 17.0 in stage 15.0 (TID 835). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 17.0 in stage 15.0 (TID 835) in 10 ms on DESKTOP-6PE936M (executor driver) (18/20)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 13.0 in stage 15.0 (TID 831) in 36 ms on DESKTOP-6PE936M (executor driver) (19/20)
+19/12/16 11:42:41 INFO Executor: Finished task 18.0 in stage 15.0 (TID 836). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 18.0 in stage 15.0 (TID 836) in 12 ms on DESKTOP-6PE936M (executor driver) (20/20)
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+19/12/16 11:42:41 INFO DAGScheduler: ResultStage 15 (show at CodingAssignment.scala:75) finished in 0.141 s
+19/12/16 11:42:41 INFO DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 15: Stage finished
+19/12/16 11:42:41 INFO DAGScheduler: Job 8 finished: show at CodingAssignment.scala:75, took 0.149713 s
+19/12/16 11:42:41 INFO SparkContext: Starting job: show at CodingAssignment.scala:75
+19/12/16 11:42:41 INFO DAGScheduler: Got job 9 (show at CodingAssignment.scala:75) with 75 output partitions
+19/12/16 11:42:41 INFO DAGScheduler: Final stage: ResultStage 17 (show at CodingAssignment.scala:75)
+19/12/16 11:42:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 16)
+19/12/16 11:42:41 INFO DAGScheduler: Missing parents: List()
+19/12/16 11:42:41 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75), which has no missing parents
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 37.1 KiB, free 1990.2 MiB)
+19/12/16 11:42:41 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 16.5 KiB, free 1990.2 MiB)
+19/12/16 11:42:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on DESKTOP-6PE936M:62724 (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1196
+19/12/16 11:42:41 INFO DAGScheduler: Submitting 75 missing tasks from ResultStage 17 (MapPartitionsRDD[40] at show at CodingAssignment.scala:75) (first 15 tasks are for partitions Vector(25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39))
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Adding task set 17.0 with 75 tasks
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 837, DESKTOP-6PE936M, executor driver, partition 25, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 2.0 in stage 17.0 (TID 838, DESKTOP-6PE936M, executor driver, partition 27, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 6.0 in stage 17.0 (TID 839, DESKTOP-6PE936M, executor driver, partition 31, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 7.0 in stage 17.0 (TID 840, DESKTOP-6PE936M, executor driver, partition 32, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 0.0 in stage 17.0 (TID 837)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 0.0 in stage 17.0 (TID 837). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 2.0 in stage 17.0 (TID 838)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (197.0 B) non-empty blocks including 2 (197.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 2.0 in stage 17.0 (TID 838). 3802 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 6.0 in stage 17.0 (TID 839)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 6.0 in stage 17.0 (TID 839). 3761 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 7.0 in stage 17.0 (TID 840)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (186.0 B) non-empty blocks including 2 (186.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 8.0 in stage 17.0 (TID 841, DESKTOP-6PE936M, executor driver, partition 33, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 9.0 in stage 17.0 (TID 842, DESKTOP-6PE936M, executor driver, partition 34, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 12.0 in stage 17.0 (TID 843, DESKTOP-6PE936M, executor driver, partition 37, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 837) in 40 ms on DESKTOP-6PE936M (executor driver) (1/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 2.0 in stage 17.0 (TID 838) in 40 ms on DESKTOP-6PE936M (executor driver) (2/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 6.0 in stage 17.0 (TID 839) in 39 ms on DESKTOP-6PE936M (executor driver) (3/75)
+19/12/16 11:42:41 INFO Executor: Running task 8.0 in stage 17.0 (TID 841)
+19/12/16 11:42:41 INFO Executor: Finished task 7.0 in stage 17.0 (TID 840). 3759 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 9.0 in stage 17.0 (TID 842)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 8.0 in stage 17.0 (TID 841). 3767 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 12.0 in stage 17.0 (TID 843)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+19/12/16 11:42:41 INFO Executor: Finished task 12.0 in stage 17.0 (TID 843). 3761 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 15.0 in stage 17.0 (TID 844, DESKTOP-6PE936M, executor driver, partition 40, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 19.0 in stage 17.0 (TID 845, DESKTOP-6PE936M, executor driver, partition 44, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 24.0 in stage 17.0 (TID 846, DESKTOP-6PE936M, executor driver, partition 49, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 9.0 in stage 17.0 (TID 842). 3762 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 7.0 in stage 17.0 (TID 840) in 69 ms on DESKTOP-6PE936M (executor driver) (4/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 8.0 in stage 17.0 (TID 841) in 33 ms on DESKTOP-6PE936M (executor driver) (5/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 12.0 in stage 17.0 (TID 843) in 32 ms on DESKTOP-6PE936M (executor driver) (6/75)
+19/12/16 11:42:41 INFO Executor: Running task 15.0 in stage 17.0 (TID 844)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 25.0 in stage 17.0 (TID 847, DESKTOP-6PE936M, executor driver, partition 50, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 19.0 in stage 17.0 (TID 845)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (144.0 B) non-empty blocks including 2 (144.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 15.0 in stage 17.0 (TID 844). 3749 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 24.0 in stage 17.0 (TID 846)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 9.0 in stage 17.0 (TID 842) in 53 ms on DESKTOP-6PE936M (executor driver) (7/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 29.0 in stage 17.0 (TID 848, DESKTOP-6PE936M, executor driver, partition 54, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 25.0 in stage 17.0 (TID 847)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 24.0 in stage 17.0 (TID 846). 3771 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 19.0 in stage 17.0 (TID 845). 3761 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 25.0 in stage 17.0 (TID 847). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 29.0 in stage 17.0 (TID 848)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 32.0 in stage 17.0 (TID 849, DESKTOP-6PE936M, executor driver, partition 57, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 40.0 in stage 17.0 (TID 850, DESKTOP-6PE936M, executor driver, partition 65, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 42.0 in stage 17.0 (TID 851, DESKTOP-6PE936M, executor driver, partition 67, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 32.0 in stage 17.0 (TID 849)
+19/12/16 11:42:41 INFO Executor: Finished task 29.0 in stage 17.0 (TID 848). 3769 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 32.0 in stage 17.0 (TID 849). 3761 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 40.0 in stage 17.0 (TID 850)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 40.0 in stage 17.0 (TID 850). 3719 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 42.0 in stage 17.0 (TID 851)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 19.0 in stage 17.0 (TID 845) in 47 ms on DESKTOP-6PE936M (executor driver) (8/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 57.0 in stage 17.0 (TID 852, DESKTOP-6PE936M, executor driver, partition 82, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 42.0 in stage 17.0 (TID 851). 3768 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 60.0 in stage 17.0 (TID 853, DESKTOP-6PE936M, executor driver, partition 85, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 57.0 in stage 17.0 (TID 852)
+19/12/16 11:42:41 INFO Executor: Running task 60.0 in stage 17.0 (TID 853)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (160.0 B) non-empty blocks including 2 (160.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 66.0 in stage 17.0 (TID 854, DESKTOP-6PE936M, executor driver, partition 91, NODE_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 1.0 in stage 17.0 (TID 855, DESKTOP-6PE936M, executor driver, partition 26, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 24.0 in stage 17.0 (TID 846) in 81 ms on DESKTOP-6PE936M (executor driver) (9/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 32.0 in stage 17.0 (TID 849) in 39 ms on DESKTOP-6PE936M (executor driver) (10/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 40.0 in stage 17.0 (TID 850) in 37 ms on DESKTOP-6PE936M (executor driver) (11/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 42.0 in stage 17.0 (TID 851) in 37 ms on DESKTOP-6PE936M (executor driver) (12/75)
+19/12/16 11:42:41 INFO Executor: Running task 66.0 in stage 17.0 (TID 854)
+19/12/16 11:42:41 INFO Executor: Finished task 60.0 in stage 17.0 (TID 853). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 1.0 in stage 17.0 (TID 855)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 3.0 in stage 17.0 (TID 856, DESKTOP-6PE936M, executor driver, partition 28, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 15.0 in stage 17.0 (TID 844) in 86 ms on DESKTOP-6PE936M (executor driver) (13/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 60.0 in stage 17.0 (TID 853) in 9 ms on DESKTOP-6PE936M (executor driver) (14/75)
+19/12/16 11:42:41 INFO Executor: Running task 3.0 in stage 17.0 (TID 856)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 29.0 in stage 17.0 (TID 848) in 55 ms on DESKTOP-6PE936M (executor driver) (15/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 25.0 in stage 17.0 (TID 847) in 79 ms on DESKTOP-6PE936M (executor driver) (16/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 1.0 in stage 17.0 (TID 855). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 4.0 in stage 17.0 (TID 857, DESKTOP-6PE936M, executor driver, partition 29, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 4.0 in stage 17.0 (TID 857)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 1.0 in stage 17.0 (TID 855) in 10 ms on DESKTOP-6PE936M (executor driver) (17/75)
+19/12/16 11:42:41 INFO Executor: Finished task 3.0 in stage 17.0 (TID 856). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 5.0 in stage 17.0 (TID 858, DESKTOP-6PE936M, executor driver, partition 30, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 5.0 in stage 17.0 (TID 858)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 3.0 in stage 17.0 (TID 856) in 8 ms on DESKTOP-6PE936M (executor driver) (18/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 4.0 in stage 17.0 (TID 857). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 10.0 in stage 17.0 (TID 859, DESKTOP-6PE936M, executor driver, partition 35, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 4.0 in stage 17.0 (TID 857) in 6 ms on DESKTOP-6PE936M (executor driver) (19/75)
+19/12/16 11:42:41 INFO Executor: Running task 10.0 in stage 17.0 (TID 859)
+19/12/16 11:42:41 INFO Executor: Finished task 5.0 in stage 17.0 (TID 858). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 11.0 in stage 17.0 (TID 860, DESKTOP-6PE936M, executor driver, partition 36, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 5.0 in stage 17.0 (TID 858) in 6 ms on DESKTOP-6PE936M (executor driver) (20/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 2 (152.0 B) non-empty blocks including 2 (152.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 57.0 in stage 17.0 (TID 852). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 13.0 in stage 17.0 (TID 861, DESKTOP-6PE936M, executor driver, partition 38, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 57.0 in stage 17.0 (TID 852) in 32 ms on DESKTOP-6PE936M (executor driver) (21/75)
+19/12/16 11:42:41 INFO Executor: Finished task 10.0 in stage 17.0 (TID 859). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 13.0 in stage 17.0 (TID 861)
+19/12/16 11:42:41 INFO Executor: Finished task 66.0 in stage 17.0 (TID 854). 3718 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 14.0 in stage 17.0 (TID 862, DESKTOP-6PE936M, executor driver, partition 39, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 66.0 in stage 17.0 (TID 854) in 28 ms on DESKTOP-6PE936M (executor driver) (22/75)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 16.0 in stage 17.0 (TID 863, DESKTOP-6PE936M, executor driver, partition 41, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 14.0 in stage 17.0 (TID 862)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 13.0 in stage 17.0 (TID 861). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 17.0 in stage 17.0 (TID 864, DESKTOP-6PE936M, executor driver, partition 42, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 10.0 in stage 17.0 (TID 859) in 14 ms on DESKTOP-6PE936M (executor driver) (23/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 13.0 in stage 17.0 (TID 861) in 12 ms on DESKTOP-6PE936M (executor driver) (24/75)
+19/12/16 11:42:41 INFO Executor: Running task 16.0 in stage 17.0 (TID 863)
+19/12/16 11:42:41 INFO Executor: Running task 17.0 in stage 17.0 (TID 864)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 16.0 in stage 17.0 (TID 863). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 14.0 in stage 17.0 (TID 862). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 18.0 in stage 17.0 (TID 865, DESKTOP-6PE936M, executor driver, partition 43, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 20.0 in stage 17.0 (TID 866, DESKTOP-6PE936M, executor driver, partition 45, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 17.0 in stage 17.0 (TID 864). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 18.0 in stage 17.0 (TID 865)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 21.0 in stage 17.0 (TID 867, DESKTOP-6PE936M, executor driver, partition 46, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 20.0 in stage 17.0 (TID 866)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 14.0 in stage 17.0 (TID 862) in 17 ms on DESKTOP-6PE936M (executor driver) (25/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 17.0 in stage 17.0 (TID 864) in 12 ms on DESKTOP-6PE936M (executor driver) (26/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+19/12/16 11:42:41 INFO Executor: Finished task 20.0 in stage 17.0 (TID 866). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 16.0 in stage 17.0 (TID 863) in 19 ms on DESKTOP-6PE936M (executor driver) (27/75)
+19/12/16 11:42:41 INFO Executor: Running task 21.0 in stage 17.0 (TID 867)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 22.0 in stage 17.0 (TID 868, DESKTOP-6PE936M, executor driver, partition 47, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 18.0 in stage 17.0 (TID 865). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 20.0 in stage 17.0 (TID 866) in 9 ms on DESKTOP-6PE936M (executor driver) (28/75)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 23.0 in stage 17.0 (TID 869, DESKTOP-6PE936M, executor driver, partition 48, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 22.0 in stage 17.0 (TID 868)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 18.0 in stage 17.0 (TID 865) in 11 ms on DESKTOP-6PE936M (executor driver) (29/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 23.0 in stage 17.0 (TID 869)
+19/12/16 11:42:41 INFO Executor: Finished task 21.0 in stage 17.0 (TID 867). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 22.0 in stage 17.0 (TID 868). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 26.0 in stage 17.0 (TID 870, DESKTOP-6PE936M, executor driver, partition 51, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 27.0 in stage 17.0 (TID 871, DESKTOP-6PE936M, executor driver, partition 52, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 26.0 in stage 17.0 (TID 870)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 22.0 in stage 17.0 (TID 868) in 8 ms on DESKTOP-6PE936M (executor driver) (30/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 21.0 in stage 17.0 (TID 867) in 15 ms on DESKTOP-6PE936M (executor driver) (31/75)
+19/12/16 11:42:41 INFO Executor: Running task 27.0 in stage 17.0 (TID 871)
+19/12/16 11:42:41 INFO Executor: Finished task 23.0 in stage 17.0 (TID 869). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 28.0 in stage 17.0 (TID 872, DESKTOP-6PE936M, executor driver, partition 53, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 23.0 in stage 17.0 (TID 869) in 12 ms on DESKTOP-6PE936M (executor driver) (32/75)
+19/12/16 11:42:41 INFO Executor: Running task 28.0 in stage 17.0 (TID 872)
+19/12/16 11:42:41 INFO Executor: Finished task 27.0 in stage 17.0 (TID 871). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 30.0 in stage 17.0 (TID 873, DESKTOP-6PE936M, executor driver, partition 55, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 27.0 in stage 17.0 (TID 871) in 8 ms on DESKTOP-6PE936M (executor driver) (33/75)
+19/12/16 11:42:41 INFO Executor: Running task 30.0 in stage 17.0 (TID 873)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 28.0 in stage 17.0 (TID 872). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 31.0 in stage 17.0 (TID 874, DESKTOP-6PE936M, executor driver, partition 56, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 28.0 in stage 17.0 (TID 872) in 7 ms on DESKTOP-6PE936M (executor driver) (34/75)
+19/12/16 11:42:41 INFO Executor: Running task 31.0 in stage 17.0 (TID 874)
+19/12/16 11:42:41 INFO Executor: Finished task 30.0 in stage 17.0 (TID 873). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 31.0 in stage 17.0 (TID 874). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 33.0 in stage 17.0 (TID 875, DESKTOP-6PE936M, executor driver, partition 58, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 34.0 in stage 17.0 (TID 876, DESKTOP-6PE936M, executor driver, partition 59, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 30.0 in stage 17.0 (TID 873) in 13 ms on DESKTOP-6PE936M (executor driver) (35/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 31.0 in stage 17.0 (TID 874) in 8 ms on DESKTOP-6PE936M (executor driver) (36/75)
+19/12/16 11:42:41 INFO Executor: Running task 33.0 in stage 17.0 (TID 875)
+19/12/16 11:42:41 INFO Executor: Running task 34.0 in stage 17.0 (TID 876)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 34.0 in stage 17.0 (TID 876). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 35.0 in stage 17.0 (TID 877, DESKTOP-6PE936M, executor driver, partition 60, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 34.0 in stage 17.0 (TID 876) in 12 ms on DESKTOP-6PE936M (executor driver) (37/75)
+19/12/16 11:42:41 INFO Executor: Running task 35.0 in stage 17.0 (TID 877)
+19/12/16 11:42:41 INFO Executor: Running task 11.0 in stage 17.0 (TID 860)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 11.0 in stage 17.0 (TID 860). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 26.0 in stage 17.0 (TID 870). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 36.0 in stage 17.0 (TID 878, DESKTOP-6PE936M, executor driver, partition 61, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 37.0 in stage 17.0 (TID 879, DESKTOP-6PE936M, executor driver, partition 62, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 37.0 in stage 17.0 (TID 879)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 37.0 in stage 17.0 (TID 879). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 38.0 in stage 17.0 (TID 880, DESKTOP-6PE936M, executor driver, partition 63, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 38.0 in stage 17.0 (TID 880)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 11.0 in stage 17.0 (TID 860) in 90 ms on DESKTOP-6PE936M (executor driver) (38/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 26.0 in stage 17.0 (TID 870) in 60 ms on DESKTOP-6PE936M (executor driver) (39/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 37.0 in stage 17.0 (TID 879) in 11 ms on DESKTOP-6PE936M (executor driver) (40/75)
+19/12/16 11:42:41 INFO Executor: Running task 36.0 in stage 17.0 (TID 878)
+19/12/16 11:42:41 INFO Executor: Finished task 38.0 in stage 17.0 (TID 880). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 39.0 in stage 17.0 (TID 881, DESKTOP-6PE936M, executor driver, partition 64, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 39.0 in stage 17.0 (TID 881)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 36.0 in stage 17.0 (TID 878). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 41.0 in stage 17.0 (TID 882, DESKTOP-6PE936M, executor driver, partition 66, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 38.0 in stage 17.0 (TID 880) in 12 ms on DESKTOP-6PE936M (executor driver) (41/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 36.0 in stage 17.0 (TID 878) in 18 ms on DESKTOP-6PE936M (executor driver) (42/75)
+19/12/16 11:42:41 INFO Executor: Finished task 39.0 in stage 17.0 (TID 881). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 43.0 in stage 17.0 (TID 883, DESKTOP-6PE936M, executor driver, partition 68, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 43.0 in stage 17.0 (TID 883)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 43.0 in stage 17.0 (TID 883). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 44.0 in stage 17.0 (TID 884, DESKTOP-6PE936M, executor driver, partition 69, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 44.0 in stage 17.0 (TID 884)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 44.0 in stage 17.0 (TID 884). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 41.0 in stage 17.0 (TID 882)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 43.0 in stage 17.0 (TID 883) in 15 ms on DESKTOP-6PE936M (executor driver) (43/75)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 45.0 in stage 17.0 (TID 885, DESKTOP-6PE936M, executor driver, partition 70, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 45.0 in stage 17.0 (TID 885)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 39.0 in stage 17.0 (TID 881) in 24 ms on DESKTOP-6PE936M (executor driver) (44/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 44.0 in stage 17.0 (TID 884) in 13 ms on DESKTOP-6PE936M (executor driver) (45/75)
+19/12/16 11:42:41 INFO Executor: Finished task 41.0 in stage 17.0 (TID 882). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 46.0 in stage 17.0 (TID 886, DESKTOP-6PE936M, executor driver, partition 71, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 41.0 in stage 17.0 (TID 882) in 23 ms on DESKTOP-6PE936M (executor driver) (46/75)
+19/12/16 11:42:41 INFO Executor: Running task 46.0 in stage 17.0 (TID 886)
+19/12/16 11:42:41 INFO Executor: Finished task 45.0 in stage 17.0 (TID 885). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 47.0 in stage 17.0 (TID 887, DESKTOP-6PE936M, executor driver, partition 72, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 45.0 in stage 17.0 (TID 885) in 9 ms on DESKTOP-6PE936M (executor driver) (47/75)
+19/12/16 11:42:41 INFO Executor: Running task 47.0 in stage 17.0 (TID 887)
+19/12/16 11:42:41 INFO Executor: Finished task 46.0 in stage 17.0 (TID 886). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 48.0 in stage 17.0 (TID 888, DESKTOP-6PE936M, executor driver, partition 73, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 46.0 in stage 17.0 (TID 886) in 8 ms on DESKTOP-6PE936M (executor driver) (48/75)
+19/12/16 11:42:41 INFO Executor: Running task 48.0 in stage 17.0 (TID 888)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 47.0 in stage 17.0 (TID 887). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 49.0 in stage 17.0 (TID 889, DESKTOP-6PE936M, executor driver, partition 74, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 47.0 in stage 17.0 (TID 887) in 8 ms on DESKTOP-6PE936M (executor driver) (49/75)
+19/12/16 11:42:41 INFO Executor: Running task 49.0 in stage 17.0 (TID 889)
+19/12/16 11:42:41 INFO Executor: Finished task 48.0 in stage 17.0 (TID 888). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 50.0 in stage 17.0 (TID 890, DESKTOP-6PE936M, executor driver, partition 75, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 48.0 in stage 17.0 (TID 888) in 6 ms on DESKTOP-6PE936M (executor driver) (50/75)
+19/12/16 11:42:41 INFO Executor: Running task 50.0 in stage 17.0 (TID 890)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 49.0 in stage 17.0 (TID 889). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 51.0 in stage 17.0 (TID 891, DESKTOP-6PE936M, executor driver, partition 76, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 33.0 in stage 17.0 (TID 875). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 51.0 in stage 17.0 (TID 891)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 52.0 in stage 17.0 (TID 892, DESKTOP-6PE936M, executor driver, partition 77, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 50.0 in stage 17.0 (TID 890). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 33.0 in stage 17.0 (TID 875) in 88 ms on DESKTOP-6PE936M (executor driver) (51/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 49.0 in stage 17.0 (TID 889) in 10 ms on DESKTOP-6PE936M (executor driver) (52/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 35.0 in stage 17.0 (TID 877). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 51.0 in stage 17.0 (TID 891). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 52.0 in stage 17.0 (TID 892)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 53.0 in stage 17.0 (TID 893, DESKTOP-6PE936M, executor driver, partition 78, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 54.0 in stage 17.0 (TID 894, DESKTOP-6PE936M, executor driver, partition 79, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 55.0 in stage 17.0 (TID 895, DESKTOP-6PE936M, executor driver, partition 80, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 50.0 in stage 17.0 (TID 890) in 13 ms on DESKTOP-6PE936M (executor driver) (53/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 35.0 in stage 17.0 (TID 877) in 84 ms on DESKTOP-6PE936M (executor driver) (54/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 51.0 in stage 17.0 (TID 891) in 8 ms on DESKTOP-6PE936M (executor driver) (55/75)
+19/12/16 11:42:41 INFO Executor: Running task 53.0 in stage 17.0 (TID 893)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 52.0 in stage 17.0 (TID 892). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 54.0 in stage 17.0 (TID 894)
+19/12/16 11:42:41 INFO Executor: Running task 55.0 in stage 17.0 (TID 895)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 56.0 in stage 17.0 (TID 896, DESKTOP-6PE936M, executor driver, partition 81, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 52.0 in stage 17.0 (TID 892) in 15 ms on DESKTOP-6PE936M (executor driver) (56/75)
+19/12/16 11:42:41 INFO Executor: Finished task 53.0 in stage 17.0 (TID 893). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 58.0 in stage 17.0 (TID 897, DESKTOP-6PE936M, executor driver, partition 83, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 56.0 in stage 17.0 (TID 896)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 53.0 in stage 17.0 (TID 893) in 14 ms on DESKTOP-6PE936M (executor driver) (57/75)
+19/12/16 11:42:41 INFO Executor: Running task 58.0 in stage 17.0 (TID 897)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 54.0 in stage 17.0 (TID 894). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 54.0 in stage 17.0 (TID 894) in 18 ms on DESKTOP-6PE936M (executor driver) (58/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+19/12/16 11:42:41 INFO Executor: Finished task 55.0 in stage 17.0 (TID 895). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 59.0 in stage 17.0 (TID 898, DESKTOP-6PE936M, executor driver, partition 84, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 61.0 in stage 17.0 (TID 899, DESKTOP-6PE936M, executor driver, partition 86, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+19/12/16 11:42:41 INFO Executor: Finished task 58.0 in stage 17.0 (TID 897). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 59.0 in stage 17.0 (TID 898)
+19/12/16 11:42:41 INFO Executor: Finished task 56.0 in stage 17.0 (TID 896). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 61.0 in stage 17.0 (TID 899)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 55.0 in stage 17.0 (TID 895) in 22 ms on DESKTOP-6PE936M (executor driver) (59/75)
+19/12/16 11:42:41 INFO Executor: Finished task 59.0 in stage 17.0 (TID 898). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 61.0 in stage 17.0 (TID 899). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 62.0 in stage 17.0 (TID 900, DESKTOP-6PE936M, executor driver, partition 87, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 62.0 in stage 17.0 (TID 900)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 63.0 in stage 17.0 (TID 901, DESKTOP-6PE936M, executor driver, partition 88, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 64.0 in stage 17.0 (TID 902, DESKTOP-6PE936M, executor driver, partition 89, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 65.0 in stage 17.0 (TID 903, DESKTOP-6PE936M, executor driver, partition 90, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Running task 65.0 in stage 17.0 (TID 903)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 59.0 in stage 17.0 (TID 898) in 13 ms on DESKTOP-6PE936M (executor driver) (60/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 61.0 in stage 17.0 (TID 899) in 13 ms on DESKTOP-6PE936M (executor driver) (61/75)
+19/12/16 11:42:41 INFO Executor: Finished task 62.0 in stage 17.0 (TID 900). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 58.0 in stage 17.0 (TID 897) in 25 ms on DESKTOP-6PE936M (executor driver) (62/75)
+19/12/16 11:42:41 INFO Executor: Running task 64.0 in stage 17.0 (TID 902)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 67.0 in stage 17.0 (TID 904, DESKTOP-6PE936M, executor driver, partition 92, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 62.0 in stage 17.0 (TID 900) in 5 ms on DESKTOP-6PE936M (executor driver) (63/75)
+19/12/16 11:42:41 INFO Executor: Running task 63.0 in stage 17.0 (TID 901)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 56.0 in stage 17.0 (TID 896) in 29 ms on DESKTOP-6PE936M (executor driver) (64/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Running task 67.0 in stage 17.0 (TID 904)
+19/12/16 11:42:41 INFO Executor: Finished task 64.0 in stage 17.0 (TID 902). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 65.0 in stage 17.0 (TID 903). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 68.0 in stage 17.0 (TID 905, DESKTOP-6PE936M, executor driver, partition 93, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 69.0 in stage 17.0 (TID 906, DESKTOP-6PE936M, executor driver, partition 94, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 63.0 in stage 17.0 (TID 901). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 65.0 in stage 17.0 (TID 903) in 12 ms on DESKTOP-6PE936M (executor driver) (65/75)
+19/12/16 11:42:41 INFO Executor: Running task 68.0 in stage 17.0 (TID 905)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 64.0 in stage 17.0 (TID 902) in 12 ms on DESKTOP-6PE936M (executor driver) (66/75)
+19/12/16 11:42:41 INFO Executor: Running task 69.0 in stage 17.0 (TID 906)
+19/12/16 11:42:41 INFO Executor: Finished task 67.0 in stage 17.0 (TID 904). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 70.0 in stage 17.0 (TID 907, DESKTOP-6PE936M, executor driver, partition 95, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 71.0 in stage 17.0 (TID 908, DESKTOP-6PE936M, executor driver, partition 96, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 63.0 in stage 17.0 (TID 901) in 13 ms on DESKTOP-6PE936M (executor driver) (67/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 67.0 in stage 17.0 (TID 904) in 8 ms on DESKTOP-6PE936M (executor driver) (68/75)
+19/12/16 11:42:41 INFO Executor: Running task 70.0 in stage 17.0 (TID 907)
+19/12/16 11:42:41 INFO Executor: Running task 71.0 in stage 17.0 (TID 908)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 69.0 in stage 17.0 (TID 906). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 68.0 in stage 17.0 (TID 905). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 72.0 in stage 17.0 (TID 909, DESKTOP-6PE936M, executor driver, partition 97, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO Executor: Finished task 71.0 in stage 17.0 (TID 908). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Finished task 70.0 in stage 17.0 (TID 907). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 72.0 in stage 17.0 (TID 909)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 73.0 in stage 17.0 (TID 910, DESKTOP-6PE936M, executor driver, partition 98, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 69.0 in stage 17.0 (TID 906) in 9 ms on DESKTOP-6PE936M (executor driver) (69/75)
+19/12/16 11:42:41 INFO TaskSetManager: Starting task 74.0 in stage 17.0 (TID 911, DESKTOP-6PE936M, executor driver, partition 99, PROCESS_LOCAL, 7248 bytes)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 68.0 in stage 17.0 (TID 905) in 10 ms on DESKTOP-6PE936M (executor driver) (70/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 71.0 in stage 17.0 (TID 908) in 7 ms on DESKTOP-6PE936M (executor driver) (71/75)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 70.0 in stage 17.0 (TID 907) in 7 ms on DESKTOP-6PE936M (executor driver) (72/75)
+19/12/16 11:42:41 INFO Executor: Running task 73.0 in stage 17.0 (TID 910)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 72.0 in stage 17.0 (TID 909). 3702 bytes result sent to driver
+19/12/16 11:42:41 INFO Executor: Running task 74.0 in stage 17.0 (TID 911)
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 72.0 in stage 17.0 (TID 909) in 9 ms on DESKTOP-6PE936M (executor driver) (73/75)
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local blocks and 0 (0.0 B) remote blocks
+19/12/16 11:42:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/12/16 11:42:41 INFO Executor: Finished task 74.0 in stage 17.0 (TID 911). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 74.0 in stage 17.0 (TID 911) in 10 ms on DESKTOP-6PE936M (executor driver) (74/75)
+19/12/16 11:42:41 INFO Executor: Finished task 73.0 in stage 17.0 (TID 910). 3659 bytes result sent to driver
+19/12/16 11:42:41 INFO TaskSetManager: Finished task 73.0 in stage 17.0 (TID 910) in 14 ms on DESKTOP-6PE936M (executor driver) (75/75)
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+19/12/16 11:42:41 INFO DAGScheduler: ResultStage 17 (show at CodingAssignment.scala:75) finished in 0.376 s
+19/12/16 11:42:41 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+19/12/16 11:42:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 17: Stage finished
+19/12/16 11:42:41 INFO DAGScheduler: Job 9 finished: show at CodingAssignment.scala:75, took 0.399739 s
+19/12/16 11:42:41 INFO BlockManagerInfo: Removed broadcast_15_piece0 on DESKTOP-6PE936M:62724 in memory (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO CodeGenerator: Code generated in 38.1648 ms
++---------+--------------+--------------+--------------+
+|accountId|AA Total Value|CC Total Value|FF Total Value|
++---------+--------------+--------------+--------------+
+|      A23|        743.51|           0.0|           0.0|
+|      A47|           0.0|           0.0|        900.67|
+|       A9|           0.0|           0.0|           0.0|
+|      A46|       1056.81|           0.0|       1304.79|
+|      A35|         826.1|           0.0|       1189.96|
+|       A6|           0.0|           0.0|           0.0|
+|      A19|           0.0|           0.0|           0.0|
+|      A37|           0.0|        338.21|           0.0|
+|      A16|           0.0|        353.66|       1636.51|
+|      A21|           0.0|        492.85|           0.0|
+|      A17|        1402.8|           0.0|           0.0|
+|       A2|           0.0|           0.0|           0.0|
+|       A8|        598.28|        253.09|        323.22|
+|      A43|       1280.19|       2032.19|           0.0|
+|      A18|        157.28|           0.0|           0.0|
+|      A32|           0.0|        433.43|           0.0|
+|      A22|           0.0|           0.0|           0.0|
+|      A36|           0.0|        709.33|           0.0|
+|      A33|         774.8|           0.0|       1446.81|
+|      A41|           0.0|           0.0|        181.65|
++---------+--------------+--------------+--------------+
+only showing top 20 rows
+
+19/12/16 11:42:41 INFO SparkContext: Invoking stop() from shutdown hook
+19/12/16 11:42:41 INFO BlockManagerInfo: Removed broadcast_12_piece0 on DESKTOP-6PE936M:62724 in memory (size: 16.5 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO SparkUI: Stopped Spark web UI at http://DESKTOP-6PE936M:4040
+19/12/16 11:42:41 INFO BlockManagerInfo: Removed broadcast_10_piece0 on DESKTOP-6PE936M:62724 in memory (size: 17.8 KiB, free: 1990.7 MiB)
+19/12/16 11:42:41 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/12/16 11:42:41 INFO MemoryStore: MemoryStore cleared
+19/12/16 11:42:41 INFO BlockManager: BlockManager stopped
+19/12/16 11:42:41 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/12/16 11:42:41 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/12/16 11:42:41 INFO SparkContext: Successfully stopped SparkContext
+19/12/16 11:42:41 INFO ShutdownHookManager: Shutdown hook called
+19/12/16 11:42:41 INFO ShutdownHookManager: Deleting directory C:\Users\DELL\AppData\Local\Temp\spark-cb0cceee-1a6f-4e54-99c8-20a5d70de1e8
